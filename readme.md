@@ -2,7 +2,7 @@
 
 This tools is designed to generate an HTML report of IAM Identity Center.
 
-account assignments. It retrieves information about account assignments from AWS Identity Center, including account IDs, account names, SSO instance names, object types (user or group), object names (usernames or group names), and permission sets assigned to each account. The report is saved as an HTML file for easy viewing.
+Currently we are just supporting account assignments. It retrieves information about account assignments from AWS Identity Center, including account IDs, account names, SSO instance names, object types (user or group), object names (usernames or group names), and permission sets assigned to each account. The report is saved as an HTML file for easy viewing.
 
 |Releases |Author  | 
 --- | --- |
