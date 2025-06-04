@@ -1,4 +1,4 @@
-# AWS Indentity Sight
+# AWS Identity Sight
 
 This tools is designed to generate an HTML report of IAM Identity Center.
 
