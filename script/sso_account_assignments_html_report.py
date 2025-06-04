@@ -44,8 +44,14 @@ def get_sso_instance_name(sso_instance_arn):
         else:
             return response['IdentityStoreId']
     except Exception as e:
-        logging.exception("An error occurred while retrieving the name of the AWS SSO instance: %s", str(e))
-        return response['OwnerAccountId']
+        logging.exception(
+            "An error occurred while retrieving the name of the AWS SSO instance: %s",
+            str(e),
+        )
+        # In error cases we can't rely on the describe_instance response.  Returning
+        # ``None`` prevents referencing an undefined variable and signals the caller
+        # that the name could not be determined.
+        return None
 
 def list_permission_sets(sso_instance_arn):
     """
