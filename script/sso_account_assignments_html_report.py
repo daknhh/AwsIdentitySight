@@ -226,7 +226,7 @@ def main():
     """
     Main function to generate the SSO report.
     """
-    print("🗼 AWS Indentity Sight 🗼\n\n")
+    print("🗼 AWS Identity Sight 🗼\n\n")
     print("ℹ️  Generating AWS Identity Center Assignment Report...\n")
     start_time = time.time()
     account_list = list_active_accounts()
